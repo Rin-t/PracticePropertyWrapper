@@ -14,6 +14,7 @@
 		24D80F5429F55E0700567778 /* PracticePropertyWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F5329F55E0700567778 /* PracticePropertyWrapperTests.swift */; };
 		24D80F5E29F55E0700567778 /* PracticePropertyWrapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F5D29F55E0700567778 /* PracticePropertyWrapperUITests.swift */; };
 		24D80F6029F55E0700567778 /* PracticePropertyWrapperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F5F29F55E0700567778 /* PracticePropertyWrapperUITestsLaunchTests.swift */; };
+		24D80F6F29F5638200567778 /* PickerSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F6E29F5638200567778 /* PickerSampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		24D80F5929F55E0700567778 /* PracticePropertyWrapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticePropertyWrapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D80F5D29F55E0700567778 /* PracticePropertyWrapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticePropertyWrapperUITests.swift; sourceTree = "<group>"; };
 		24D80F5F29F55E0700567778 /* PracticePropertyWrapperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticePropertyWrapperUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		24D80F6E29F5638200567778 /* PickerSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				24D80F4229F55E0600567778 /* PracticePropertyWrapperApp.swift */,
 				24D80F4429F55E0600567778 /* ContentView.swift */,
+				24D80F6E29F5638200567778 /* PickerSampleView.swift */,
 				24D80F4629F55E0600567778 /* Assets.xcassets */,
 				24D80F4829F55E0600567778 /* Preview Content */,
 			);
@@ -257,6 +260,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24D80F6F29F5638200567778 /* PickerSampleView.swift in Sources */,
 				24D80F4529F55E0600567778 /* ContentView.swift in Sources */,
 				24D80F4329F55E0600567778 /* PracticePropertyWrapperApp.swift in Sources */,
 			);
