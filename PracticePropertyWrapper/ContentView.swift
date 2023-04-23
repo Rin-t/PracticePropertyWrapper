@@ -8,14 +8,33 @@
 import SwiftUI
 
 struct ContentView: View {
+
+    @State var text = "morning"
+
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            CustomButtonView(text: $text)
+            Text(text)
         }
-        .padding()
+    }
+}
+
+
+// 子Viewで値を変更を親Viewの値に伝えるときはBindingを使用
+// initでBinding<String>を使用する時は「_」を使用する
+struct CustomButtonView: View {
+
+    @Binding var text: String
+
+    init(text: Binding<String>) {
+        self._text = text
+    }
+
+    var body: some View {
+        Button("tap") {
+            text = text == "morning" ? "evening" : "morning"
+        }
+        .padding(.bottom, 16)
     }
 }
 
