@@ -15,6 +15,7 @@
 		24D80F5E29F55E0700567778 /* PracticePropertyWrapperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F5D29F55E0700567778 /* PracticePropertyWrapperUITests.swift */; };
 		24D80F6029F55E0700567778 /* PracticePropertyWrapperUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F5F29F55E0700567778 /* PracticePropertyWrapperUITestsLaunchTests.swift */; };
 		24D80F6F29F5638200567778 /* PickerSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F6E29F5638200567778 /* PickerSampleView.swift */; };
+		24D80F7129F5682A00567778 /* ObservedObjectSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F7029F5682A00567778 /* ObservedObjectSampleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		24D80F5D29F55E0700567778 /* PracticePropertyWrapperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticePropertyWrapperUITests.swift; sourceTree = "<group>"; };
 		24D80F5F29F55E0700567778 /* PracticePropertyWrapperUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticePropertyWrapperUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		24D80F6E29F5638200567778 /* PickerSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerSampleView.swift; sourceTree = "<group>"; };
+		24D80F7029F5682A00567778 /* ObservedObjectSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectSampleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				24D80F4229F55E0600567778 /* PracticePropertyWrapperApp.swift */,
 				24D80F4429F55E0600567778 /* ContentView.swift */,
 				24D80F6E29F5638200567778 /* PickerSampleView.swift */,
+				24D80F7029F5682A00567778 /* ObservedObjectSampleView.swift */,
 				24D80F4629F55E0600567778 /* Assets.xcassets */,
 				24D80F4829F55E0600567778 /* Preview Content */,
 			);
@@ -263,6 +266,7 @@
 				24D80F6F29F5638200567778 /* PickerSampleView.swift in Sources */,
 				24D80F4529F55E0600567778 /* ContentView.swift in Sources */,
 				24D80F4329F55E0600567778 /* PracticePropertyWrapperApp.swift in Sources */,
+				24D80F7129F5682A00567778 /* ObservedObjectSampleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
