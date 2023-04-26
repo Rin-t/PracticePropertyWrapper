@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ObservedObjectAndStateObject: View {
+struct ObservedObjectAndStateObjectView: View {
 
     @StateObject var viewModel = ObservedObjectAndStateObjectViewModel()
 
@@ -38,9 +38,9 @@ struct ObservedObjectAndStateObject: View {
     }
 }
 
-struct ObservedObjectAndStateObject_Previews: PreviewProvider {
+struct ObservedObjectAndStateObjectView_Previews: PreviewProvider {
     static var previews: some View {
-        ObservedObjectAndStateObject()
+        ObservedObjectAndStateObjectView()
     }
 }
 
