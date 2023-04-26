@@ -9,12 +9,13 @@ import SwiftUI
 
 struct ContentView: View {
 
-    @State var text = "morning"
+    @State private var text = "morning"
 
     var body: some View {
         VStack {
-            CustomButtonView(text: $text)
             Text(text)
+                .padding(.bottom, 16)
+            FirstChildView(text: $text)
         }
     }
 }
@@ -22,9 +23,26 @@ struct ContentView: View {
 
 // 子Viewで値を変更を親Viewの値に伝えるときはBindingを使用
 // initでBinding<String>を使用する時は「_」を使用する
-struct CustomButtonView: View {
+struct FirstChildView: View {
 
-    @Binding var text: String
+    @Binding private var text: String
+
+    init(text: Binding<String>) {
+        self._text = text
+    }
+
+    var body: some View {
+        VStack {
+            Text("FirstChildView")
+                .padding(.bottom, 16)
+            SecondChildView(text: $text)
+        }
+    }
+}
+
+struct SecondChildView: View {
+
+    @Binding private var text: String
 
     init(text: Binding<String>) {
         self._text = text
@@ -37,6 +55,7 @@ struct CustomButtonView: View {
         .padding(.bottom, 16)
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
