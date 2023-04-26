@@ -11,6 +11,7 @@ struct ObservedObjectSampleView: View {
 
     // ObservedObjectをつけないとviewModelのfuncの処理は走るけど、
     // 値はViewに反映されない。
+    // @StateObjectでもよい
     @ObservedObject var viewModel = ViewModel(text: "morning")
 
     var body: some View {
