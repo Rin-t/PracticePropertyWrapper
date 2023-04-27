@@ -18,6 +18,7 @@
 		24D80F7129F5682A00567778 /* ObservedObjectSampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F7029F5682A00567778 /* ObservedObjectSampleView.swift */; };
 		24D80F7329F6C0DD00567778 /* PracticeEnvironmentObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F7229F6C0DD00567778 /* PracticeEnvironmentObject.swift */; };
 		24D80F7529F957F000567778 /* ObservedObjectAndStateObjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F7429F957F000567778 /* ObservedObjectAndStateObjectView.swift */; };
+		24D80F7729F9645E00567778 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24D80F7629F9645E00567778 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		24D80F7029F5682A00567778 /* ObservedObjectSampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectSampleView.swift; sourceTree = "<group>"; };
 		24D80F7229F6C0DD00567778 /* PracticeEnvironmentObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeEnvironmentObject.swift; sourceTree = "<group>"; };
 		24D80F7429F957F000567778 /* ObservedObjectAndStateObjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservedObjectAndStateObjectView.swift; sourceTree = "<group>"; };
+		24D80F7629F9645E00567778 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 				24D80F6E29F5638200567778 /* PickerSampleView.swift */,
 				24D80F7029F5682A00567778 /* ObservedObjectSampleView.swift */,
 				24D80F7429F957F000567778 /* ObservedObjectAndStateObjectView.swift */,
+				24D80F7629F9645E00567778 /* CounterView.swift */,
 				24D80F4629F55E0600567778 /* Assets.xcassets */,
 				24D80F4829F55E0600567778 /* Preview Content */,
 			);
@@ -273,6 +276,7 @@
 				24D80F4529F55E0600567778 /* ContentView.swift in Sources */,
 				24D80F4329F55E0600567778 /* PracticePropertyWrapperApp.swift in Sources */,
 				24D80F7529F957F000567778 /* ObservedObjectAndStateObjectView.swift in Sources */,
+				24D80F7729F9645E00567778 /* CounterView.swift in Sources */,
 				24D80F7129F5682A00567778 /* ObservedObjectSampleView.swift in Sources */,
 				24D80F7329F6C0DD00567778 /* PracticeEnvironmentObject.swift in Sources */,
 			);
