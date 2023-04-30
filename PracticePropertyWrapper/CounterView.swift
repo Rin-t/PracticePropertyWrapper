@@ -13,30 +13,39 @@ struct CounterView_Previews: PreviewProvider {
     }
 }
 
-final class DataSource: ObservableObject {
-    @Published var counter = 0
+final class Counter: ObservableObject {
+    @Published var value = 0
 
     init() {
-        print("init")
+        print("init Counter")
     }
 }
 
 struct CounterView: View {
 
-    @State private var isDanger = false
+    @State private var isSun = false
 
     var body: some View {
         VStack {
-            Button("change color") {
-                isDanger.toggle()
-            }
 
-            if isDanger {
-                Circle().foregroundColor(.red)
+            Button("change image") {
+                isSun.toggle()
+            }
+            .padding(.bottom, 16)
+
+            if isSun {
+                Image(systemName: "sun.max")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 120, height: 120)
             } else {
-                Circle().foregroundColor(.green)
+                Image(systemName: "moon")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(width: 120, height: 120)
             }
             CounterChildView()
+                .padding(.top, 16)
         }
     }
 }
@@ -45,14 +54,21 @@ struct CounterView: View {
 struct CounterChildView: View {
 
     // @ObservedObjectにすると、change colorボタンをタップでcounterの値が0に戻る
-    @StateObject var dataSource = DataSource()
+    @StateObject var dataSource = Counter()
+
+    init() {
+        print("init CounterChildView")
+    }
 
     var body: some View {
         VStack {
-            Button("increment counter") {
-                dataSource.counter += 1
+            Button("カウントアップ") {
+                dataSource.value += 1
             }
-            Text("count: \(dataSource.counter)")
+            .padding(.bottom, 16)
+            
+            Text("count: \(dataSource.value)")
+                .font(.system(size: 20))
         }
     }
 }
